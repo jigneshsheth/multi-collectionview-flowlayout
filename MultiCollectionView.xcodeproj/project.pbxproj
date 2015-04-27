@@ -8,13 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		D0A662DC1A6F725D006DC2DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A662DB1A6F725D006DC2DF /* AppDelegate.swift */; };
-		D0A662DE1A6F725D006DC2DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A662DD1A6F725D006DC2DF /* ViewController.swift */; };
 		D0A662E11A6F725D006DC2DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0A662DF1A6F725D006DC2DF /* Main.storyboard */; };
 		D0A662E31A6F725D006DC2DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0A662E21A6F725D006DC2DF /* Images.xcassets */; };
 		D0A662E61A6F725D006DC2DF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0A662E41A6F725D006DC2DF /* LaunchScreen.xib */; };
-		D0A662F21A6F725D006DC2DF /* MultiCollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A662F11A6F725D006DC2DF /* MultiCollectionViewTests.swift */; };
 		D0A662FC1A6F782C006DC2DF /* CustomCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A662FB1A6F782C006DC2DF /* CustomCollectionViewFlowLayout.swift */; };
-		D0A662FE1A6F8301006DC2DF /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A662FD1A6F8301006DC2DF /* CustomCollectionViewCell.swift */; };
 		D0A663021A6F93B4006DC2DF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A663011A6F93B4006DC2DF /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,15 +29,12 @@
 		D0A662D61A6F725D006DC2DF /* MultiCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0A662DA1A6F725D006DC2DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0A662DB1A6F725D006DC2DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D0A662DD1A6F725D006DC2DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D0A662E01A6F725D006DC2DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D0A662E21A6F725D006DC2DF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D0A662E51A6F725D006DC2DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D0A662EB1A6F725D006DC2DF /* MultiCollectionViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiCollectionViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0A662F01A6F725D006DC2DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D0A662F11A6F725D006DC2DF /* MultiCollectionViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiCollectionViewTests.swift; sourceTree = "<group>"; };
 		D0A662FB1A6F782C006DC2DF /* CustomCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
-		D0A662FD1A6F8301006DC2DF /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		D0A663011A6F93B4006DC2DF /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,7 +99,6 @@
 		D0A662EE1A6F725D006DC2DF /* MultiCollectionViewTests */ = {
 			isa = PBXGroup;
 			children = (
-				D0A662F11A6F725D006DC2DF /* MultiCollectionViewTests.swift */,
 				D0A662EF1A6F725D006DC2DF /* Supporting Files */,
 			);
 			path = MultiCollectionViewTests;
@@ -122,9 +115,7 @@
 		D0A662FF1A6F937D006DC2DF /* CollectionViewCode */ = {
 			isa = PBXGroup;
 			children = (
-				D0A662DD1A6F725D006DC2DF /* ViewController.swift */,
 				D0A662FB1A6F782C006DC2DF /* CustomCollectionViewFlowLayout.swift */,
-				D0A662FD1A6F8301006DC2DF /* CustomCollectionViewCell.swift */,
 			);
 			name = CollectionViewCode;
 			sourceTree = "<group>";
@@ -237,10 +228,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0A662DE1A6F725D006DC2DF /* ViewController.swift in Sources */,
 				D0A662FC1A6F782C006DC2DF /* CustomCollectionViewFlowLayout.swift in Sources */,
 				D0A662DC1A6F725D006DC2DF /* AppDelegate.swift in Sources */,
-				D0A662FE1A6F8301006DC2DF /* CustomCollectionViewCell.swift in Sources */,
 				D0A663021A6F93B4006DC2DF /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,7 +238,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0A662F21A6F725D006DC2DF /* MultiCollectionViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +423,7 @@
 				D0A662F71A6F725D006DC2DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D0A662F81A6F725D006DC2DF /* Build configuration list for PBXNativeTarget "MultiCollectionViewTests" */ = {
 			isa = XCConfigurationList;
@@ -443,6 +432,7 @@
 				D0A662FA1A6F725D006DC2DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

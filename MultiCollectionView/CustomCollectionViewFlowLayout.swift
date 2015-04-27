@@ -8,18 +8,32 @@
 
 import UIKit
 import QuartzCore
+
 class CustomCollectionViewFlowLayout: UICollectionViewFlowLayout {
   
   var indexPathsToAnimate:[AnyObject] = [AnyObject]()
   
-  class func flowlayout(itemSize:CGSize,minLineSpacing:CGFloat, minItemSpacing:CGFloat,inset:UIEdgeInsets) -> CustomCollectionViewFlowLayout{
+  private  class func flowlayout(itemSize:CGSize,minLineSpacing:CGFloat, minItemSpacing:CGFloat) -> CustomCollectionViewFlowLayout{
     
     var flowlayout = CustomCollectionViewFlowLayout()
     flowlayout.itemSize = itemSize
     flowlayout.minimumInteritemSpacing = minItemSpacing
     flowlayout.minimumLineSpacing = minLineSpacing
-    flowlayout.sectionInset = inset
+    flowlayout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10)
     return flowlayout
+  }
+  
+  class func smallListLayout(viewWidth:CGFloat) -> CustomCollectionViewFlowLayout{
+    return flowlayout(CGSizeMake(viewWidth - 30 ,80), minLineSpacing: 5, minItemSpacing: 5)
+  }
+  
+  class func mediumListLayout(viewWidth:CGFloat) -> CustomCollectionViewFlowLayout{
+    return flowlayout(CGSizeMake(viewWidth - 30,280), minLineSpacing: 5, minItemSpacing: 5)
+  }
+  
+  class func gridLayout(viewWidth:CGFloat) -> CustomCollectionViewFlowLayout{
+    let itemWidth = (viewWidth - 30) / 2
+    return flowlayout(CGSizeMake(itemWidth, itemWidth), minLineSpacing: 5, minItemSpacing: 5)
   }
   
   override func initialLayoutAttributesForAppearingItemAtIndexPath(itemIndexPath: NSIndexPath) -> UICollectionViewLayoutAttributes?{
@@ -35,9 +49,11 @@ class CustomCollectionViewFlowLayout: UICollectionViewFlowLayout {
   }
   
   override func shouldInvalidateLayoutForBoundsChange(newBounds: CGRect) -> Bool {
-    var oldBounds = self.collectionView!.bounds
-    if !CGSizeEqualToSize(oldBounds.size, newBounds.size) {
-      return true
+    var oldBounds = self.collectionView?.bounds
+    if let oldBounds = oldBounds {
+      if !CGSizeEqualToSize(oldBounds.size, newBounds.size) {
+        return true
+      }
     }
     return false
   }
